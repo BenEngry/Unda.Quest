@@ -1,0 +1,78 @@
+    /* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+  
+    /* Main */
+
+body {
+    min-width: 1345px;
+    height: 3973px;
+
+    min-width: 100vh;
+    background: #030812;
+    color: #fff;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+    /* cent - centring */
+.cent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Header */
+
+.header {
+    width: 100%;
+    height: 45px;
+    padding-top: 45px;
+}
+
+.navItem {
+    height: 40px;
+}
+
+.logo {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+
+}
+.preSpan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FC4F4F;
+    text-transform: uppercase ;
+}
+
+.subNav {
+    height: 100%;
+    width: 100%;
+}
+
+.borderBtn {
+    width: 150px;
+    height: 45px;
+
+    font-weight: 500;
+    color: #FC4F4F;
+    background-color: #030812;
+
+    border: 1px solid #FC4F4F;
+    border-radius: 10px;
+    padding: 10px;
+
+}
