@@ -291,6 +291,9 @@ body {
     font-weight: 600;
 }
 
+    /* Active classes */
+
+
 .activePanel {
     background-color: #FC4F4F;
     transform: translateY(-25px);
@@ -301,14 +304,36 @@ body {
     background-color: #030812;
     
 }
+
+    /* Spesial class for corecting vsg icons */
+
 .subIconhouse {
     transform: translateX(-6px) translateY(-2px);
 }
+
+.subIconGamepad {
+    width: 27px;
+    height: 19px;
+}
+
+.subIconPeopleZero {
+    transform: translateX(15px) translateY(1px);
+}
+
+.subIconPeopleOne {
+    transform: translateX(-15px) translateY(8px);
+}
+
+.subIconPeopleTwo {
+    transform: translateX(-24px) translateY(-4px);
+}
+
     /* https://codepen.io/sosuke/pen/Pjoqqp */
     /* https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element */
 .filterColor {
     filter: invert(70%) sepia(68%) saturate(6738%) hue-rotate(333deg) brightness(100%) contrast(86%);
 }
+
 
 
 
