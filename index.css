@@ -65,8 +65,9 @@ body {
 }
 
 .borderBtn {
+
     width: 150px;
-    height: 100%;
+    height: 40px;
 
     font-weight: 500;
     color: #FC4F4F;
@@ -91,3 +92,227 @@ body {
 .links:hover {
     color: #FC4F4F;
 }
+
+    /* Main */
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+    /* Intro */
+
+.introContent {
+    width: 100%;
+
+    padding: 192px 0px 100px 0px;
+}
+
+.title {
+    width: 510px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+
+}
+
+.titleGrdnt {
+    background: linear-gradient(140.62deg, rgba(255, 255, 255, 0.5) -3.54%, #FFFFFF 26.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.titleSpan {
+    color: #FC4F4F !important;
+}
+
+.subTitle {
+    width: 500px;
+    padding: 28px 0px;
+    color: #B2B2B2;
+}
+
+.introInfo div {
+    gap: 40px;
+}
+
+@keyframes animSolidBtn {
+    from {
+        background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    }
+    10% {
+        background: linear-gradient(224.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    20% {
+        background: linear-gradient(214.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    30% {
+        background: linear-gradient(204.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    40% {
+        background: linear-gradient(194.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    50% {
+        background: linear-gradient(184.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    60% {
+        background: linear-gradient(174.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    70% {
+        background: linear-gradient(164.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    80% {
+        background: linear-gradient(154.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    } 
+    90% {
+        background: linear-gradient(144.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    }
+
+    to {
+        background: linear-gradient(134.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    }
+  }
+
+.solidBtn {
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    color: #000;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+
+.solidBtn:hover {
+    animation-duration: .4s;
+    animation-name: animSolidBtn;
+    animation-direction:reverse;
+}
+
+.learnMoreSpan {
+    margin: 0px 7px;
+}
+
+.learnMoreBtn {
+ 
+    width: 185px;
+    font-weight: 300;
+
+    color: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+}
+
+
+.learnMoreBtn:hover {
+    color: #fff;
+    background-color: #030812;
+}
+
+.learnMoreSvg {
+    color: #FC4F4F;
+}
+
+.titleImg {
+    position: absolute;
+    width: 533px;
+    height: 360px;
+
+    background: url(./src/img/meta.jpg);
+    background-size: 100%;
+    border-radius: 70px 10px;
+}
+
+.svgPreImg {
+    box-sizing: border-box;
+
+    position: relative;
+    left: 25px;
+    top: 25px;
+    z-index: -1;
+}
+
+    /* Menu */
+
+.menu {
+    height: 696px;  
+}
+
+.menuTitle {
+    height: 48px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.menuTitleSpan {
+    color: #FC4F4F;
+    font-weight: 600;
+}
+
+.panel {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 540px;
+
+    border: .5px solid #fff;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 15px;
+}
+
+.panelItem {
+    box-sizing: border-box;
+
+    padding: 0px 45px;
+
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.iconContainer {
+
+    width: 66px;
+    height: 66px;
+
+    border-radius: 10px;
+
+    background-color: #FC4F4F;
+    transition: .6s ease-in-out;
+
+}
+
+.iconTitle {
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.activePanel {
+    background-color: #FC4F4F;
+    transform: translateY(-25px);
+    color: #030812;
+}
+
+.activePanelIcon {
+    background-color: #030812;
+    
+}
+.subIconhouse {
+    transform: translateX(-6px) translateY(-2px);
+}
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    /* https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element */
+.filterColor {
+    filter: invert(70%) sepia(68%) saturate(6738%) hue-rotate(333deg) brightness(100%) contrast(86%);
+}
+
+
+
+
+
+
+
