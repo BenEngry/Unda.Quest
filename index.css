@@ -21,6 +21,7 @@ body {
 }
 
     /* cent - centring */
+
 .cent {
     display: flex;
     flex-direction: row;
@@ -65,7 +66,7 @@ body {
 
 .borderBtn {
     width: 150px;
-    height: 45px;
+    height: 100%;
 
     font-weight: 500;
     color: #FC4F4F;
@@ -75,4 +76,18 @@ body {
     border-radius: 10px;
     padding: 10px;
 
+    transition: .4s ease-in-out;
+}
+.borderBtn:hover {
+    background-color: #FC4F4F;
+    color: #030812;
+    border: 1px solid #030812;
+}
+
+.links {
+    transition: .4s ease-in-out;
+}
+
+.links:hover {
+    color: #FC4F4F;
 }
