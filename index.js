@@ -1,3 +1,5 @@
+// Panel hovers
+
 const arrPanelItems = document.querySelectorAll(".panelItem"),
     arrPanelItemsIcon = document.querySelectorAll(".iconContainer"),
     panel = document.querySelector(".panel");
@@ -24,3 +26,30 @@ arrPanelItemsIcon.forEach(element => {
         });
     });
 });
+
+// Accords
+
+const arrAccords = document.querySelectorAll(".devAccordItem");
+
+const toggleAccordClasses = (element) => {
+    element.classList.toggle("devAccordItemActive");
+    element.childNodes[3].childNodes[3].classList.toggle("accordContentActive");
+    element.childNodes[3].childNodes[1].classList.toggle("accordTitleActive");
+    element.childNodes[1].classList.toggle("devIconConActive");
+    element.childNodes[1].childNodes[1].classList.toggle("filterColor");
+    element.childNodes[5].childNodes[1].classList.toggle("filterColor");
+    element.childNodes[5].childNodes[1].classList.toggle("accordArrow");
+}
+
+arrAccords.forEach( element => {
+    element.addEventListener("click", ()=> {
+        if (![...element.classList].find( el => el === "devAccordItemActive") ){
+            arrAccords.forEach( item => {
+                if ([...item.classList].find( el => el === "devAccordItemActive") ){
+                    toggleAccordClasses(item)
+                }
+            })
+            toggleAccordClasses(element);
+        }
+    });
+})

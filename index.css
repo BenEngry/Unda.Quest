@@ -341,12 +341,12 @@ body {
 }
 
 .devTitle {
-    font-size: 32px;
+    font-size: 33px;
 }
 
 .devSubTitle {
     width: 545px;
-    padding: 28px 0px;
+    padding: 36px 0px;
     color: #B2B2B2;
 }
 
@@ -452,8 +452,30 @@ body {
     border: 1px solid #fff;
     border-radius: 15px;
 
-    padding: 0px 25px;
+    padding: 20px 25px;
     gap: 20px;
+
+    transition: .4s ease-in-out;
+}
+
+.devAccordItemActive {
+    height: 164px;
+    background-color: #FC4F4F;
+    color: #030812;
+}
+
+.accordContent {
+    display: none;
+    transition: .6s;
+    color: #030812;
+}
+
+.accordContentActive {
+    display: block;
+}
+
+.accordIconReverse {
+    transform: rotate(-180px);
 }
 
 .devIconCon {
@@ -465,10 +487,13 @@ body {
 
 }
 
+.devIconConActive {
+    background-color: #030812;
+}
+
 .devIcon {
     width: 15px;
     height: 15px;
-
 }
 
 .accordText {
@@ -479,6 +504,16 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #B3B3B3;
+    text-align: left;
+}
+
+.accordTitleActive {
+    color: #030812;
+    font-weight: 700;
+}
+
+.accordArrow {
+    transform: rotate(180deg);
 }
 
 
