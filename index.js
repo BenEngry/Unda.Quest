@@ -53,3 +53,28 @@ arrAccords.forEach( element => {
         }
     });
 })
+
+// Accords Ciptakan 
+
+const arrAccordsCiptakan = document.querySelectorAll(".ciptakanCardItem");
+
+const togglArrAccordsCiptakanClasses = (element) => {
+    element.classList.toggle("ciptakanCardItemActive");
+    element.childNodes[1].classList.toggle("ciptakanIconConActive");
+    element.childNodes[1].childNodes[1].classList.toggle("filterColor");
+    element.childNodes[3].classList.toggle("ciptakanIconTitleActive");
+
+}
+
+arrAccordsCiptakan.forEach( element => {
+    element.addEventListener("click", ()=> {
+        if (![...element.classList].find( el => el === "ciptakanCardItemActive") ){
+            arrAccordsCiptakan.forEach( item => {
+                if ([...item.classList].find( el => el === "ciptakanCardItemActive") ){
+                    togglArrAccordsCiptakanClasses(item)
+                }
+            })
+            togglArrAccordsCiptakanClasses(element);
+        }
+    });
+})
